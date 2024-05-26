@@ -23,6 +23,10 @@ return {
       lspconfig.tsserver.setup({
         capabilities = capabilities
       })
+      lspconfig.elixirls.setup({
+        capabilities = capabilities,
+        cmd = { "/usr/lib/elixir-ls/language_server.sh" };
+      })
       lspconfig.marksman.setup({
         capabilities = capabilities
       })
@@ -32,7 +36,13 @@ return {
       lspconfig.terraformls.setup({
         capabilities = capabilities
       })
+      lspconfig.tflint.setup({
+        capabilities = capabilities
+      })
       lspconfig.rust_analyzer.setup({
+        capabilities = capabilities
+      })
+      lspconfig.htmx.setup({
         capabilities = capabilities
       })
       lspconfig.pyright.setup({

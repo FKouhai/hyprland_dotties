@@ -1,56 +1,43 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font";
-    font-weight: bold;
+    font-family: "JetbrainsMono Nerd Font";
     font-size: 13px;
     min-height: 0;
 }
 
 window#waybar {
-    background: rgba(21,18,27,0);
-/*    background: transparent;*/
-    color: #cdd6f4;
-}
-window#waybar.hidden {
-   opacity: 0.0
+    background: transparent;
+    color: white;
 }
 
-tooltip {
-    background: #1e1e2e;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #11111b;
+#workspaces {
+	background-color: #24283b;
+	margin: 5px;
+	margin-left: 10px;
+	border-radius: 5px;
 }
-
 #workspaces button {
-    padding: 5px;
-    color: #313244;
-    margin-right: 5px;
+    padding: 5px 5;
+    color: #c0caf5;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
-}
+  color: #7dcfff;
 
+}
 #workspaces button.focused {
-    color: #a6adc8;
-    background: #eba0ac;
-    border-radius: 10px;
-}
-
-#workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
-    border-radius: 10px;
+    color: #24283b;
+    background-color: #7dcfff;
+    border-radius: 10;
 }
 
 #workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
-    border-radius: 10px;
+	background-color: #7dcfff;
+	color: #24283b;
+	border-radius: 10;
 }
+
 
 #custom-power_profile,
 #custom-launcher,
@@ -72,121 +59,49 @@ tooltip {
 #workspaces,
 #tray,
 #custom-launcher{
-    background: #1e1e2e;
-    border-radius: 10px 0px 0px 10px;
-    opacity: 0.8;
-    padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 10px;
-    border: 1px solid #181825;
+	background-color: #24283b;
+	padding: 5px 10px;
+  opacity: 0.8;
+	margin: 5px 0px;
 }
 #custom-playerctl{
-    background: #1e1e2e;
+    background: #24283b;
     border-radius: 0px 0px 0px 0px;
     opacity: 0.8;
     padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 10px;
-    border: 1px solid #181825;
+    margin: 5px 0px;
 
 }
 #custom-playerlabel{
-    background: #1e1e2e;
-    border-radius: 0px 10px 10px 0px;
-    opacity: 0.8;
-    padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 10px;
-    border: 10px solid #181825;
-
-}
-#custom-night {
-    background: #1e1e2e;
+    background: #24283b;
     border-radius: 0px 0px 0px 0px;
     opacity: 0.8;
     padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 10px;
-    border: 1px solid #181825;
+    margin: 5px 0px;
+
+}
+#custom-date {
+	color: #7dcfff;
 }
 
-/* close to left */
-#temperature,
-#backlight,
-
-/*close to the right */
-#bluetooth,
-
-
-#tray {
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-#workspaces {
-    border-radius: 10px;
-    margin-left: 10px;
-    padding-right: 0px;
-    padding-left: 5px;
-}
-
-#window {
-    border-radius: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+#custom-power {
+	color: #7dcfff;
+	border-radius: 0 10px 10px 0;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 #clock {
-    color: #fab387;
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 10px;
-    border-right: 0px;
+    color: #b48ead;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
 }
 
 #network {
-    color: #f9e2af;
-    border-radius: 0px 0px 0px 0px;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#bluetooth {
-    color: #89b4fa;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px
+	color: #f7768e;
+	border-radius: 5px 0px 0px 5px;
 }
 
 #pulseaudio {
-    border-radius: 10px 0px 0px 10px;
-    color: #89b4fa;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#pulseaudio.microphone {
-    color: #cba6f7;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
-}
-
-#battery {
-    color: #a6e3a1;
-    border-radius: 0 10px 10px 0;
-    margin-right: 10px;
-    border-left: 0px;
-}
-
-#custom-weather {
-    border-radius: 0px 10px 10px 0px;
-    border-right: 0px;
-    margin-left: 0px;
-}
-#custom-power {
-    color: #f9e2af;
-    border-radius: 0px 10px 10px 0px;
-    border-right: 0px;
-    margin-left: 0px;
-
+	color: #e0af68;
 }

@@ -1,6 +1,5 @@
 return {
-  {
-    "williamboman/mason.nvim",
+  { "williamboman/mason.nvim",
     lazy = false,
     config = function()
       require("mason").setup()
@@ -20,7 +19,7 @@ return {
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       local lspconfig = require("lspconfig")
-      lspconfig.tsserver.setup({
+      lspconfig.ts_ls.setup({
         capabilities = capabilities
       })
       lspconfig.elixirls.setup({
@@ -54,6 +53,10 @@ return {
       lspconfig.html.setup({
         capabilities = capabilities
       })
+      lspconfig.dockerls.setup({
+        capabilities = capabilities,
+        root_pattern = "Dockerfile, dockerfile"
+      })
       lspconfig.lua_ls.setup({
         capabilities = capabilities
       })
@@ -62,7 +65,6 @@ return {
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
       vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
-      vim.keymap.set("n", "<leader>rn", vim.lsp.buf.code_action, {})
       vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, {})
     end,
   },

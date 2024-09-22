@@ -55,7 +55,7 @@
    },
 
     "custom/playerctl": {
-      "format": "{icon}",
+      "format": " {icon}",
       "return-type": "json",
       "max-length": 10,
       "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
